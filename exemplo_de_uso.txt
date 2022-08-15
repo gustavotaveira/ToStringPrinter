@@ -1,0 +1,22 @@
+Exemplo de uso:
+
+Obs: transforma o objeto java em JSON usando o toString e a classe TesteClassStringBuilder.	
+
+@Override
+	public String toString() {
+		TesteClassStringBuilder builder = new TesteClassStringBuilder(this);
+		builder.append("cdPergunta", cdPergunta);
+		builder.append("cdResposta", cdResposta);
+		builder.append("cdRespostaSeg", cdRespostaSeg);
+		builder.append("cdRespostaWIS", cdRespostaWIS);
+		builder.append("dominio", dominio);
+		builder.append("dsPergunta", dsPergunta);
+		builder.append("dsResposta", dsResposta);
+		builder.append("nmVariavel", nmVariavel);
+		builder.append("nomeVariavelAux", nomeVariavelAux);
+		builder.append("nuOrdemImpressao", nuOrdemImpressao);
+		builder.append("perguntaRespostaPrecisaLiberacao",
+				perguntaRespostaPrecisaLiberacao);
+		builder.append("selecionado", selecionado);
+		return builder.toString();
+	}
